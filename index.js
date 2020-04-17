@@ -7,9 +7,10 @@ function nowServing(line) {
   var next = '';
   if (line.length > 0){
     next = line[0];
+    line.unshift();
+    console.log(line);
     return `Currently serving ${next}.`;
   } else {
     return "There is nobody waiting to be served!";
   }
-  line.unshift();
 }

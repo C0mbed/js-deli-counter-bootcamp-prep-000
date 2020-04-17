@@ -7,7 +7,7 @@ function nowServing(line) {
   var next = '';
   if (line.length > 0){
     next = line[0];
-    line.unshift();
+    line.shift();
     console.log(line);
     return `Currently serving ${next}.`;
   } else {

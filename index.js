@@ -13,3 +13,17 @@ function nowServing(line) {
     return "There is nobody waiting to be served!";
   }
 }
+
+function currentLine(line) {
+  if (line.length > 0) {
+    for (var i = 0; i <= line.length; i++) {
+      count = 1;
+      let result = `${count}. ${i]}`;
+      line.push(result);
+    }
+    let update = line.join(", ");
+    return update;
+  } else {
+    return "The line is currently empty.";
+  }
+}

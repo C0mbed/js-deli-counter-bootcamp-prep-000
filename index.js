@@ -4,7 +4,13 @@ function takeANumber(line, name) {
 }
 
 function nowServing(line) {
-  var next = line[0];
-  line.unshift();
-  return next;
+  var next = '';
+  if (line.length > 0){
+    next = line[0];
+    line.unshift();
+    return next;
+  } else {
+    return "There is nobody waiting to be served!";
+  }
+  
 }

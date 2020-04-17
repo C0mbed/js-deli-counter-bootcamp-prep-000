@@ -18,7 +18,6 @@ function currentLine(line) {
   if (line.length > 0) {
     let count = 1;
     for (var i = 0; i <= line.length; i++) {
-      let count = 1;
       let result = `${count}. ${i}`;
       line.push(result);
       count++''

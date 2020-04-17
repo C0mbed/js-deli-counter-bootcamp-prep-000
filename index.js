@@ -17,7 +17,7 @@ function nowServing(line) {
 function currentLine(line) {
   if (line.length > 0) {
     for (var i = 0; i <= line.length; i++) {
-      count = 1;
+      let count = 1;
       let result = `${count}. ${i}`;
       line.push(result);
       count++;
